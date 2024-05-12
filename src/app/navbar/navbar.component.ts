@@ -5,15 +5,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
-  selector: 'app-nav-bar',
+  selector: 'app-navbar',
   standalone: true,
   imports: [
     MatButtonModule,
     MatIconModule,
     MatDividerModule
   ],
-  templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.scss'
 })
 export class NavBarComponent {
   constructor(private route: ActivatedRoute, private router: Router) { }
