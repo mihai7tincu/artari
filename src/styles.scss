@@ -1,0 +1,114 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+/*
+@import '@angular/material/prebuilt-themes/purple-green.css';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+*/
+
+@font-face {
+  font-family: AAsianHiro;
+  src: url(assets/fonts/AAsianHiro-2O17X.otf) format("opentype");
+}
+@font-face {
+  font-family: AAsianHiroCyr;
+  src: url(assets/fonts/AAsianHiroCyr-VGJVZ.otf) format("opentype");
+}
+@font-face {
+  font-family: AsianDings;
+  src: url(assets/fonts/AsianDings-9zP2.ttf) format("opentype");
+}
+@font-face {
+  font-family: BankaiDemoVersion;
+  src: url(assets/fonts/BankaiDemoVersion-lglxd.ttf) format("opentype");
+}
+@font-face {
+  font-family: CatCafe;
+  src: url(assets/fonts/CatCafe.ttf) format("opentype");
+}
+@font-face {
+  font-family: CFKenjiroDemo;
+  src: url(assets/fonts/CFKenjiroDemo.ttf) format("opentype");
+}
+@font-face {
+  font-family: FujimaruRegular;
+  src: url(assets/fonts/FujimaruRegular-WGYY.ttf) format("opentype");
+}
+@font-face {
+  font-family: Hachimaki;
+  src: url(assets/fonts/Hachimaki-EawZ8.otf) format("opentype");
+}
+@font-face {
+  font-family: HirosakiRegular;
+  src: url(assets/fonts/HirosakiRegular-BWlg5.ttf) format("opentype");
+}
+@font-face {
+  font-family: Ichimaru;
+  src: url(assets/fonts/Ichimaru-PKB1d.otf) format("opentype");
+}
+@font-face {
+  font-family: JapanRichRegular;
+  src: url(assets/fonts/JapanRichRegular-lgRpD.otf) format("opentype");
+}
+@font-face {
+  font-family: KaneiwaAlpRegular;
+  src: url(assets/fonts/KaneiwaAlpRegular-jEpG.ttf) format("opentype");
+}
+@font-face {
+  font-family: Kareudon;
+  src: url(assets/fonts/Kareudon-lg0Ad.otf) format("opentype");
+}
+@font-face {
+  font-family: mangat;
+  src: url(assets/fonts/mangat.ttf) format("opentype");
+}
+@font-face {
+  font-family: MasmusehDemoVersion;
+  src: url(assets/fonts/MasmusehDemoVersion.otf) format("opentype");
+}
+@font-face {
+  font-family: MISAKI;
+  src: url(assets/fonts/MISAKI.otf) format("opentype");
+}
+@font-face {
+  font-family: MurasamuFreeTrial;
+  src: url(assets/fonts/MurasamuFreeTrial.otf) format("opentype");
+}
+@font-face {
+  font-family: Ninjas;
+  src: url(assets/fonts/Ninjas-pWeR.ttf) format("opentype");
+}
+@font-face {
+  font-family: OkashiRegular;
+  src: url(assets/fonts/OkashiRegular-L33Z3.ttf) format("opentype");
+}
+@font-face {
+  font-family: OnsenJapanDemoRegular;
+  src: url(assets/fonts/OnsenJapanDemoRegular.ttf) format("opentype");
+}
+@font-face {
+  font-family: Sankyu;
+  src: url(assets/fonts/Sankyu-4BOJ6.otf) format("opentype");
+}
+@font-face {
+  font-family: Sayonarabeveled;
+  src: url(assets/fonts/Sayonarabeveled-59Wv.otf) format("opentype");
+}
+@font-face {
+  font-family: Scratchedman;
+  src: url(assets/fonts/Scratchedman-DEMO.otf) format("opentype");
+}
+@font-face {
+  font-family: Shikamaru;
+  src: url(assets/fonts/Shikamaru.otf) format("opentype");
+}
+
+/** {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', 'arial', sans-serif;
+}*/
+.body {
+  margin: 0;
+}
+
