@@ -1,4 +1,10 @@
 .new {
+  &-title {
+      font-weight: 600;
+      font-size: 16px;
+      padding-left: 10px;
+  }
+
   &-products {
     display: flex;
     flex-direction: row;

@@ -44,3 +44,6 @@ npm install bootstrap bootstrap-icons
 
 npm install @ng-bootstrap/ng-bootstrap@next
 
+npm install @coreui/angular@5
+
+https://coreui.io/angular/docs/components/carousel/
