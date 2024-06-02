@@ -22,13 +22,19 @@ export class HomeCarouselComponent {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: './assets/images/carousel/angular.jpg'
+      src: './assets/images/carousel/artari1.jpg'
     };
     this.slides[1] = {
-      src: './assets/images/carousel/react.jpg'
+      src: './assets/images/carousel/artari2.jpg'
     };
     this.slides[2] = {
-      src: './assets/images/carousel/vue.jpg'
+      src: './assets/images/carousel/artari3.jpg'
+    };
+    this.slides[3] = {
+      src: './assets/images/carousel/artari4.jpg'
+    };
+    this.slides[4] = {
+      src: './assets/images/carousel/artari5.jpg'
     };
   }
 }

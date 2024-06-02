@@ -1,16 +1,46 @@
 <div class="container-fluid container">
   <br />
-  <div class="carousel">
-    <app-home-carousel></app-home-carousel>
+  <div class="row">
+    <div class="carousel">
+      <app-home-carousel></app-home-carousel>
+    </div>
   </div>
-  <br />
-  <div class="new">
-    <span class="new-title">
-      PRODUSE NOI
-    </span>
-    <br />
-    <br />
+
+  <div class="row">
+    <div class="aboutus-title">
+      DESPRE NOI
+    </div>
+    <div class="aboutus-text">
+      Totul a pornit ca un experiment, mai intai cu niste seminte adunate de sub un artar japonez din gradina botanica si cateva ghivece.
+      <br />
+      Cativa ani mai tarziu s-a transformat intr-un hobby si in dorinta de a avea cat mai multe modele de artari japonezi.
+      <br />
+      Ca intr-un final sa rezulte o mini-pepiniera care incearca sa vanda la preturi cat mai mici, pui din cele peste 20 de modele de artari japonezi pe care le-a adunat in timp.
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="search">
+      <form class="d-flex">
+        <input class="form-control me-2 search-box" type="search" placeholder="Cauta" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Cauta</button>
+      </form>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="new-title">
+      MODELE NOI
+    </div>
+  </div>
+
+  <div class="row">
     <div class="new-products">
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
       <app-product-card></app-product-card>
       <app-product-card></app-product-card>
       <app-product-card></app-product-card>
@@ -20,4 +50,3 @@
   <br />
   <br />
 </div>
-
