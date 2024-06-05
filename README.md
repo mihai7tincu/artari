@@ -41,9 +41,8 @@ ng serve
 http://localhost:4200
 
 npm install bootstrap bootstrap-icons
-
 npm install @ng-bootstrap/ng-bootstrap@next
-
 npm install @coreui/angular@5
+npm install @types/node
 
 https://coreui.io/angular/docs/components/carousel/

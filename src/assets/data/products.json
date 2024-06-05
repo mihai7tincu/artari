@@ -1,0 +1,37 @@
+{
+	"newProducts": [
+		{
+			"id": 1,
+			"name": "Acer palmatum",
+			"shortName": "Butterfly",
+			"description": "Frunze variegate cu margini roz. Toamna se coloreaza in rosu sau magenta. Crestere lenta",
+			"price": 20,
+			"type": 1,
+			"height": "2m - 3.5m",
+			"propagation": "grafting or softwood cuttings",
+			"imageUrl": "../../assets/images/butterfly/5.jpg"
+		},
+		{
+			"id": 2,
+			"name": "Acer palmatum",
+			"shortName": "Seiryu",
+			"description": "Frunze disecate. Toamna se coloreaza in galben auriu. Crestere lenta",
+			"price": 25,
+			"type": 0,
+			"height": "3m - 4.5m",
+			"propagation": "grafting or softwood cuttings",
+			"imageUrl": "../../assets/images/seiryu/2.jpg"
+		},
+		{
+			"id": 3,
+			"name": "Acer palmatum",
+			"shortName": "Phoenix",
+			"description": "Frunze rosii cu vene verzi-galbui. Toamna se coloreaza in rosu si galben",
+			"price": 30,
+			"type": 1,
+			"height": "6m",
+			"propagation": "grafting or softwood cuttings",
+			"imageUrl": "../../assets/images/phoenix/1.jpg"
+		}
+	]
+}

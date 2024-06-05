@@ -1,8 +1,13 @@
 <div class="card">
   <div class="card-image">
-    <img src="../../assets/images/ryusen/1.jpg" alt="card-alt" height="350" width="250">
+    <img [src]="product.imageUrl" alt="card-alt" height="358" width="250" class="card-image-img">
   </div>
-  <div class="card-title">
-    Dissectum Rubrum
+  <div class="card-info">
+    <div>
+      {{ product.name }} <span class="card-title">{{product.shortName }}</span>
+    </div>
+    <div class="card-price">
+      {{product.price}} lei
+    </div>
   </div>
 </div>

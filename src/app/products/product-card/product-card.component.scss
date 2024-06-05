@@ -5,13 +5,31 @@
   padding-right: 5px;
   margin-top: 10px;
   margin-right: 10px;
+  background-color: rgba(243, 244, 247, 1);
 
   &-image {
+    padding-top: 6px;
+
+    &-img {
+      object-fit: cover;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: row;
     padding-top: 6px;
   }
 
   &-title {
-    padding-top: 3px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-left: 3px;
     font-weight: bold;
+  }
+
+  &-price {
+    margin-left: auto;
+    padding-right: 3px;
   }
 }
