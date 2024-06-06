@@ -3,8 +3,11 @@
     <img [src]="product.imageUrl" alt="card-alt" height="358" width="250" class="card-image-img">
   </div>
   <div class="card-info">
-    <div>
-      {{ product.name }} <span class="card-title">{{product.shortName }}</span>
+    <div *ngIf="!hasLongName()">
+      {{ product.name }} <span class="card-title">{{ product.cultivar }}</span>
+    </div>
+    <div *ngIf="hasLongName()">
+      {{ product.species }} <span class="card-title">{{ product.cultivar }}</span>
     </div>
     <div class="card-price">
       {{product.price}} lei

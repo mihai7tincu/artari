@@ -1,7 +1,8 @@
 export interface Product {
   id: number;
+  species: string;
   name: string;
-  shortName: string;
+  cultivar: string;
   description: string;
   price: number;
   type: number;
