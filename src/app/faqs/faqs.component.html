@@ -1,4 +1,36 @@
 <div class="container-fluid container">
-  <p>faqs works!</p>
-</div>
+  add modal component<br />
+  edit page component<br />
+  add to cart behaviour subject<br />
+  order processor service<br />
 
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID</th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="crustSize">
+      <th mat-header-cell *matHeaderCellDef> Crust Size </th>
+      <td mat-cell *matCellDef="let element"> {{element.crustSize}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="crustType">
+      <th mat-header-cell *matHeaderCellDef> Crust Type </th>
+      <td mat-cell *matCellDef="let element"> {{element.crustType}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="toppings">
+      <th mat-header-cell *matHeaderCellDef> Toppings </th>
+      <td mat-cell *matCellDef="let element"> {{element.toppings}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
