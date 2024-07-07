@@ -69,7 +69,8 @@ export class FaqsComponent implements OnInit {
   }
 
   onClickEdit(id: number) {
-    this.router.navigate([`../products/edit/${id}`]);
+    //this.router.navigate([`../products/edit/${id}`]);
+    this.router.navigate([`faqs/edit/${id}`]);
   }
 
   onClickAddToCart(id: number) {

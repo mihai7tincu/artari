@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component';
 import { PromotionsComponent } from './promotions/promotions.component';
 import { ShoppingCartComponent } from './shoppingc-cart/shopping-cart.component';
 import { ProductEditComponent } from './products/product-edit/product-edit.component';
+import { FaqEditComponent } from './faqs/faq-edit/faq-edit.component';
 
 export const routes: Routes = [
   {
@@ -42,7 +43,16 @@ export const routes: Routes = [
   //    }]
   //},
   { path: 'promotions', component: PromotionsComponent },
-  { path: 'faqs', component: FaqsComponent },
+  {
+    path: 'faqs',
+    pathMatch: 'full',
+    component: FaqsComponent
+  },
+  {
+    path: 'faqs/edit/:id',
+    pathMatch: 'full',
+    component: FaqEditComponent
+  },
   { path: 'contact', component: ContactComponent },
   { path: 'shopping-cart', component: ShoppingCartComponent }
 ];
