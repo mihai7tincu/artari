@@ -3,39 +3,48 @@
     <h3>Product edit</h3>
   </div>
 
-  <div [formGroup]="formGroup" (ngSubmit)="onClickSave()">
+  <form [formGroup]="formGroup">
     <div class="row">
       <div class="col-md-4">
         <label for="name">Name: </label>
-        <input id="name" type="text" formControlName="name">
+        <input id="name" type="text" class="form-control" formControlName="name">
+        <div *ngIf="formGroup.get('name')?.invalid && (formGroup.get('name')?.dirty || formGroup.get('name')?.touched)" class="validation-message">
+          Please provide a name.
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-4">
         <label for="crustSize">Crust Size: </label>
-        <input id="crustSize" type="text" formControlName="crustSize">
+        <input id="crustSize" type="text" class="form-control" formControlName="crustSize">
+        <div *ngIf="formGroup.get('crustSize')?.invalid && (formGroup.get('crustSize')?.dirty || formGroup.get('crustSize')?.touched)" class="validation-message">
+          Please provide a crust size.
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-4">
         <label for="crustType">Crust Type: </label>
-        <input id="crustType" type="text" formControlName="crustType">
+        <input id="crustType" type="text" class="form-control" formControlName="crustType">
+        <div *ngIf="formGroup.get('crustType')?.invalid && (formGroup.get('crustType')?.dirty || formGroup.get('crustType')?.touched)" class="validation-message">
+          Please provide a crust type.
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-4">
         <label for="toppings">Toppings: </label>
-        <input id="toppings" type="text" formControlName="toppings">
+        <input id="toppings" type="text" class="form-control" formControlName="toppings">
       </div>
     </div>
-  </div>
+  </form>
 
   <div class="row">
     <div class="col-md-4">
-      <button type="button" (click)="onClickSave()">Save</button>
+      <button type="button" (click)="onClickSave()" [disabled]="!formGroup.valid">Save</button>
     </div>
   </div>
 </div>

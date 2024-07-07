@@ -12,6 +12,7 @@ import { AddPizzaDialog } from './add-dialog/add-dialog.component';
 import { Pizza } from './models/pizza.model';
 import { PizzaService } from './services/pizza.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CartProductsCountService } from '../shoppingc-cart/services/cart-products-count.service';
 
 @Component({
   selector: 'app-faqs',
@@ -27,7 +28,8 @@ export class FaqsComponent implements OnInit {
   constructor(
     private router: Router,
     public dialog: MatDialog,
-    private pizzaService: PizzaService) {
+    private pizzaService: PizzaService,
+    private cartProductsCountService: CartProductsCountService) {
 
     this.fetchDataSource();
   }
@@ -68,5 +70,9 @@ export class FaqsComponent implements OnInit {
 
   onClickEdit(id: number) {
     this.router.navigate([`../products/edit/${id}`]);
+  }
+
+  onClickAddToCart(id: number) {
+    this.cartProductsCountService.updateProductsNo(1);
   }
 }

@@ -3,11 +3,12 @@ import { PizzaService } from '../../faqs/services/pizza.service';
 import { Pizza } from '../../faqs/models/pizza.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'product-edit',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './product-edit.component.html',
   styleUrl: './product-edit.component.scss'
 })
@@ -69,7 +70,7 @@ export class ProductEditComponent implements OnInit {
       //toppings: this.toppings.value
     };
 
-    if (this.model && this.model.id) {
+    if (this.model !== null && this.model.id > 0) {
       this.pizzaService.edit(model).subscribe(result => {
         this.navigateToList();
       });

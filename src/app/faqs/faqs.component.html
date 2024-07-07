@@ -1,10 +1,7 @@
 <div class="container-fluid container">
   <h3>Pizza list</h3>
-  form group<br />
-  validations<br />
-  add to cart behaviour subject<br />
   order processor service<br />
-  two way binding component<br />
+  two way binding parent child component<br />
   form group builder<br />
 
   <div class="grid-header">
@@ -45,6 +42,9 @@
     <ng-container matColumnDef="actions">
       <mat-header-cell *matHeaderCellDef class="actions-header"> </mat-header-cell>
       <mat-cell *matCellDef="let element" class="actions-cell">
+        <span class="row-delete" (click)="onClickAddToCart(element.id)">
+          <i class="material-icons grid-header-add-icon">add_circle_outline</i>
+        </span>
         <span class="row-delete" (click)="onClickDelete(element.id)">
           <i class="material-icons grid-header-add-icon">delete</i>
         </span>

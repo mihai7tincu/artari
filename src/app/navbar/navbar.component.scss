@@ -29,3 +29,23 @@
   height: 45px;
   width: 45px;
 }
+
+.shopping-cart {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-count {
+  width: 22px;
+  height: 19px;
+  line-height: 20px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  background: red;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
