@@ -1,32 +1,35 @@
 <div class="container-fluid container">
-  <p>Product edit</p>
-
   <div class="row">
-    <div class="col-md-4">
-      <label for="name">Name: </label>
-      <input id="name" type="text" [formControl]="name">
-      <!--<p>Value: {{ name.value }}</p>-->
-    </div>
+    <h3>Product edit</h3>
   </div>
 
-  <div class="row">
-    <div class="col-md-4">
-      <label for="crustSize">Crust Size: </label>
-      <input id="crustSize" type="text" [formControl]="crustSize">
+  <div [formGroup]="formGroup" (ngSubmit)="onClickSave()">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="name">Name: </label>
+        <input id="name" type="text" formControlName="name">
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-4">
-      <label for="crustType">Crust Type: </label>
-      <input id="crustType" type="text" [formControl]="crustType">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="crustSize">Crust Size: </label>
+        <input id="crustSize" type="text" formControlName="crustSize">
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-4">
-      <label for="toppings">Toppings: </label>
-      <input id="toppings" type="text" [formControl]="toppings">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="crustType">Crust Type: </label>
+        <input id="crustType" type="text" formControlName="crustType">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <label for="toppings">Toppings: </label>
+        <input id="toppings" type="text" formControlName="toppings">
+      </div>
     </div>
   </div>
 

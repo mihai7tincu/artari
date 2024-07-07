@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../../faqs/services/pizza.service';
 import { Pizza } from '../../faqs/models/pizza.model';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'product-edit',
@@ -13,12 +13,13 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 })
 export class ProductEditComponent implements OnInit {
   modelId: number = 0;
-  model: Pizza = <Pizza>{};
-
-  name = new FormControl('');
-  crustSize = new FormControl();
-  crustType = new FormControl();
-  toppings = new FormControl();
+  model: Pizza | null = null;
+  formGroup: FormGroup = new FormGroup({
+    name: new FormControl(null, Validators.required),
+    crustSize: new FormControl(null, [Validators.required, Validators.min(10), Validators.max(40)]),
+    crustType: new FormControl(null, Validators.required),
+    toppings: new FormControl(null)
+  });
 
   constructor(
     private router: Router,
@@ -44,21 +45,31 @@ export class ProductEditComponent implements OnInit {
   }
 
   initForm() {
-    this.name.setValue(this.model.name);
-    this.crustSize.setValue(this.model.crustSize);
-    this.crustType.setValue(this.model.crustType);
+    if (this.model) {
+      this.formGroup = new FormGroup({
+        name: new FormControl(this.model.name, Validators.required),
+        crustSize: new FormControl(this.model.crustSize, [Validators.required, Validators.min(10), Validators.max(40)]),
+        crustType: new FormControl(this.model.crustType, Validators.required),
+        toppings: new FormControl(this.model.toppings)
+      });
+    }
   }
 
   onClickSave(): void {
+    console.log(this.formGroup);
+
+    if (this.formGroup?.invalid)
+      return;
+
     const model = <Pizza>{
       id: this.modelId,
-      name: this.name.value,
-      crustSize: parseInt(this.crustSize.value.toString()),
-      crustType: parseInt(this.crustType.value.toString()),
+      name: this.formGroup?.controls['name'].value,
+      crustSize: parseInt(this.formGroup?.controls['crustSize'].value.toString()),
+      crustType: parseInt(this.formGroup?.controls['crustType'].value.toString()),
       //toppings: this.toppings.value
     };
 
-    if (this.model.id) {
+    if (this.model && this.model.id) {
       this.pizzaService.edit(model).subscribe(result => {
         this.navigateToList();
       });
