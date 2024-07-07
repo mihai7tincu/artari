@@ -38,3 +38,29 @@ mat-cell {
 .row-delete {
     cursor: pointer;
 }
+
+.id {
+  &-header {
+    max-width: 50px;
+  }
+
+  &-cell {
+    max-width: 50px;
+  }
+}
+
+.actions {
+  &-header {
+    max-width: 50px;
+  }
+
+  &-cell {
+    max-width: 50px;
+  }
+}
+
+.name-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: dodgerblue;
+}

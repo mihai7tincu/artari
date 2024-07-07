@@ -16,7 +16,19 @@ export class PizzaService {
     return this.http.get<Pizza[]>(`${this.rootUrl}/get-all`);
   }
 
-  create(model: Pizza): Observable<any> {
-    return this.http.post<Pizza>(`${this.rootUrl}/create`, model);
+  get(id: number): Observable<Pizza> {
+    return this.http.get<Pizza>(`${this.rootUrl}/get/${id}`);
+  }
+
+  create(model: Pizza): Observable<number> {
+    return this.http.post<number>(`${this.rootUrl}/create`, model);
+  }
+
+  edit(model: Pizza): Observable<number> {
+    return this.http.post<number>(`${this.rootUrl}/edit/${model.id}`, model);
+  }
+
+  delete(id: number): Observable<number> {
+    return this.http.delete<number>(`${this.rootUrl}/delete/${id}`);
   }
 }

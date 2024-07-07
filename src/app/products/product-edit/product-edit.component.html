@@ -1,0 +1,38 @@
+<div class="container-fluid container">
+  <p>Product edit</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <label for="name">Name: </label>
+      <input id="name" type="text" [formControl]="name">
+      <!--<p>Value: {{ name.value }}</p>-->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <label for="crustSize">Crust Size: </label>
+      <input id="crustSize" type="text" [formControl]="crustSize">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <label for="crustType">Crust Type: </label>
+      <input id="crustType" type="text" [formControl]="crustType">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <label for="toppings">Toppings: </label>
+      <input id="toppings" type="text" [formControl]="toppings">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <button type="button" (click)="onClickSave()">Save</button>
+    </div>
+  </div>
+</div>

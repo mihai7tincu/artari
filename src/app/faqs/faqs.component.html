@@ -1,10 +1,10 @@
 <div class="container-fluid container">
-  add modal component<br />
-  reactive forms, form group<br />
+  <h1>Pizza list</h1>
+  form group<br />
   validations<br />
-  edit page component<br />
   add to cart behaviour subject<br />
   order processor service<br />
+  two way binding component<br />
 
   <div class="grid-header">
     <button id="addPizza" class="grid-header-add" mat-stroked-button (click)="onClickAdd()">
@@ -15,14 +15,14 @@
 
   <mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="id">
-      <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+      <mat-header-cell *matHeaderCellDef class="id-header"> ID </mat-header-cell>
+      <mat-cell *matCellDef="let element" class="id-cell"> {{element.id}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="name">
       <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
       <mat-cell *matCellDef="let element">
-        <a href="#">{{element.name}}</a>
+        <span class="name-link" (click)="onClickEdit(element.id)">{{element.name}}</span>
       </mat-cell>
     </ng-container>
 
@@ -40,12 +40,12 @@
       <mat-header-cell *matHeaderCellDef> Toppings </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.toppings}} </mat-cell>
     </ng-container>
-    
+
     <ng-container matColumnDef="actions">
-      <mat-header-cell *matHeaderCellDef> </mat-header-cell>
-      <mat-cell *matCellDef="let element">
+      <mat-header-cell *matHeaderCellDef class="actions-header"> </mat-header-cell>
+      <mat-cell *matCellDef="let element" class="actions-cell">
         <span class="row-delete" (click)="onClickDelete(element.id)">
-          <i class="material-icons grid-header-add-icon">delete_forever</i>
+          <i class="material-icons grid-header-add-icon">delete</i>
         </span>
       </mat-cell>
     </ng-container>

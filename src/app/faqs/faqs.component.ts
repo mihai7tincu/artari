@@ -11,6 +11,7 @@ import { MatTableModule } from '@angular/material/table';
 import { AddPizzaDialog } from './add-dialog/add-dialog.component';
 import { Pizza } from './models/pizza.model';
 import { PizzaService } from './services/pizza.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-faqs',
@@ -24,6 +25,7 @@ export class FaqsComponent implements OnInit {
   dataSource: Pizza[] = [];
 
   constructor(
+    private router: Router,
     public dialog: MatDialog,
     private pizzaService: PizzaService) {
 
@@ -53,12 +55,18 @@ export class FaqsComponent implements OnInit {
       data: <Pizza>{}
     });
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result: number) => {
       this.fetchDataSource();
     });
   }
 
   onClickDelete(id: number) {
-    console.log(id);
+    this.pizzaService.delete(id).subscribe((response: number) => {
+      this.fetchDataSource();
+    });
+  }
+
+  onClickEdit(id: number) {
+    this.router.navigate([`../products/edit/${id}`]);
   }
 }

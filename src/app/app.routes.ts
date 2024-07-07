@@ -5,11 +5,42 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { PromotionsComponent } from './promotions/promotions.component';
 import { ShoppingCartComponent } from './shoppingc-cart/shopping-cart.component';
+import { ProductEditComponent } from './products/product-edit/product-edit.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'products', component: ProductsComponent },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home',
+  },
+  {
+    path: 'home',
+    pathMatch: 'full',
+    component: HomeComponent
+  },
+  {
+    path: 'products',
+    pathMatch: 'full',
+    component: ProductsComponent,
+  },
+  {
+    path: 'products/edit/:id',
+    pathMatch: 'full',
+    component: ProductEditComponent
+  },
+  //{
+  //  path: 'products', component: ProductsComponent,
+  //  pathMatch: 'full',
+  //  children: [
+  //    {
+  //      path: 'edit/list',
+  //      component: ProductsComponent
+  //    },
+  //    {
+  //      path: 'edit/:id',
+  //      component: ProductEditComponent
+  //    }]
+  //},
   { path: 'promotions', component: PromotionsComponent },
   { path: 'faqs', component: FaqsComponent },
   { path: 'contact', component: ContactComponent },
