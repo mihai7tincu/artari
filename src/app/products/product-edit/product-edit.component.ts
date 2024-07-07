@@ -4,11 +4,12 @@ import { Pizza } from '../../faqs/models/pizza.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ParentBoxComponent } from '../parent-box/parent-box.component';
 
 @Component({
   selector: 'product-edit',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, ParentBoxComponent],
   templateUrl: './product-edit.component.html',
   styleUrl: './product-edit.component.scss'
 })

@@ -1,0 +1,10 @@
+<div class="parent-box">
+  <div class="row">
+    <span>Count on parent: {{counterOnParent}}</span>
+  </div>
+  <div class="row">
+    <input type="button" value="Add" style="width: 70px; margin-left: 10px;" (click)="onClickIncrement()" />
+  </div>
+
+  <child-box [(count)]="counterOnParent"></child-box>
+</div>
