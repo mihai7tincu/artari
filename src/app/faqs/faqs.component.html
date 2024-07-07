@@ -1,36 +1,55 @@
 <div class="container-fluid container">
   add modal component<br />
+  reactive forms, form group<br />
+  validations<br />
   edit page component<br />
   add to cart behaviour subject<br />
   order processor service<br />
 
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <div class="grid-header">
+    <button id="addPizza" class="grid-header-add" mat-stroked-button (click)="onClickAdd()">
+      <i class="material-icons grid-header-add-icon">add_circle_outline</i>
+      <span class="grid-header-add-text">Add</span>
+    </button>
+  </div>
+
+  <mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef> ID</th>
-      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <a href="#">{{element.name}}</a>
+      </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="crustSize">
-      <th mat-header-cell *matHeaderCellDef> Crust Size </th>
-      <td mat-cell *matCellDef="let element"> {{element.crustSize}} </td>
+      <mat-header-cell *matHeaderCellDef> Crust Size </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.crustSize}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="crustType">
-      <th mat-header-cell *matHeaderCellDef> Crust Type </th>
-      <td mat-cell *matCellDef="let element"> {{element.crustType}} </td>
+      <mat-header-cell *matHeaderCellDef> Crust Type </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.crustType}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="toppings">
-      <th mat-header-cell *matHeaderCellDef> Toppings </th>
-      <td mat-cell *matCellDef="let element"> {{element.toppings}} </td>
+      <mat-header-cell *matHeaderCellDef> Toppings </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.toppings}} </mat-cell>
     </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
+    
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <span class="row-delete" (click)="onClickDelete(element.id)">
+          <i class="material-icons grid-header-add-icon">delete_forever</i>
+        </span>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
 </div>

@@ -5,3 +5,36 @@
 table {
   width: 100%;
 }
+
+mat-header-cell {
+  font-weight: bold;
+  background-color: #ededed !important;
+}
+
+mat-cell {
+  color: #626262;
+}
+
+.grid-header {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+  justify-content: inherit;
+
+  &-add {
+    display: flex;
+    flex-direction: row;
+
+    &-icon {
+    }
+
+    &-text {
+      padding-left: 10px;
+      font-size: 18px;
+    }
+  }
+}
+
+.row-delete {
+    cursor: pointer;
+}

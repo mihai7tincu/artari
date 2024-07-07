@@ -15,4 +15,8 @@ export class PizzaService {
   getAll(): Observable<Pizza[]> {
     return this.http.get<Pizza[]>(`${this.rootUrl}/get-all`);
   }
+
+  create(model: Pizza): Observable<any> {
+    return this.http.post<Pizza>(`${this.rootUrl}/create`, model);
+  }
 }

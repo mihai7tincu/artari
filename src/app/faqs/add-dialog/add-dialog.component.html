@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>{{data.id ? 'Edit' : 'Add'}} pizza</h1>
+<div *ngIf="data" mat-dialog-content>
+  <div class="row">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="data.name">
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field>
+      <mat-label>Crust Size</mat-label>
+      <input matInput [(ngModel)]="data.crustSize">
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field>
+      <mat-label>Crust Type</mat-label>
+      <input matInput [(ngModel)]="data.crustType">
+    </mat-form-field>
+  </div>
+</div>
+
+<div mat-dialog-actions class="dialg-footer">
+  <button mat-button (click)="onClickNo()" class="dialg-footer-no">No</button>
+  <button mat-button cdkFocusInitial class="dialg-footer-ok" (click)="onClickYes()">Ok</button>
+  <!--[mat-dialog-close]="data"-->
+</div>
