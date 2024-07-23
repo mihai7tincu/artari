@@ -1,12 +1,16 @@
+import { ProductSpecies, ProductType } from "./product-type.enum";
+
 export interface Product {
   id: number;
-  species: string;
+  type: ProductType; //acer, ginkgo, kaki
+  species: ProductSpecies; //palmatum, palmatum dissectum, shirasawanum, japonicum
+  cultivar: string; //aureum, pixie, jordan
   name: string;
-  cultivar: string;
   description: string;
   price: number;
-  type: number;
   height: string;
   propagation: string;
   imageUrl: string;
+  priority: number;
+  isNew: boolean;
 }

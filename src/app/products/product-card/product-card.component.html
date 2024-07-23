@@ -1,13 +1,10 @@
 <div class="card">
   <div class="card-image">
-    <img [src]="product.imageUrl" alt="card-alt" height="358" width="250" class="card-image-img">
+    <img [src]="product.imageUrl" alt="{{product.cultivar}}-alt" height="358" width="250" class="card-image-img">
   </div>
   <div class="card-info">
-    <div *ngIf="!hasLongName()">
-      {{ product.name }} <span class="card-title">{{ product.cultivar }}</span>
-    </div>
-    <div *ngIf="hasLongName()">
-      {{ product.species }} <span class="card-title">{{ product.cultivar }}</span>
+    <div>
+      {{ getName() }} <span class="card-title">{{ product.cultivar }}</span>
     </div>
     <div class="card-price">
       {{product.price}} lei

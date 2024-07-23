@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../../models/product.model';
 import { CommonModule } from '@angular/common';
+import { ProductSpecies, ProductSpeciesNames, ProductSpeciesShortNames, ProductType, ProductTypeNames, ProductTypeShortNames } from '../../models/product-type.enum';
 
 @Component({
   selector: 'app-product-card',
@@ -12,10 +13,25 @@ import { CommonModule } from '@angular/common';
 export class ProductCardComponent implements OnInit {
   @Input() product: Product = <Product>{};
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  getName(): string {
+    
+    if (this.product.name.length >= 23) {
+      var type = ProductTypeShortNames[this.product.type];
+      var species = ProductSpeciesShortNames[this.product.species];
+      return `${type}${species}`;
+    } {
+      var type = ProductTypeNames[this.product.type];
+      var species = ProductSpeciesNames[this.product.species];
+      return `${type} ${species}`;
+    }
   }
 
-  hasLongName(): boolean {
-    return (this.product.name.length + this.product.cultivar.length) >= 22;
+  getFullName() {
+    var type = ProductTypeNames[this.product.type];
+    var species = ProductSpeciesNames[this.product.species];
+    
+    return `${type} ${species} ${this.product.cultivar}`;
   }
 }
