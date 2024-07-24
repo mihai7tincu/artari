@@ -3,10 +3,10 @@ import { ContactComponent } from './contact/contact.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
-import { PromotionsComponent } from './promotions/promotions.component';
+import { AdminComponent } from './admin/admin.component';
 import { ShoppingCartComponent } from './shoppingc-cart/shopping-cart.component';
 import { ProductEditComponent } from './products/product-edit/product-edit.component';
-import { FaqEditComponent } from './faqs/faq-edit/faq-edit.component';
+import { FaqEditComponent } from './admin/faq-edit/faq-edit.component';
 
 export const routes: Routes = [
   {
@@ -42,7 +42,7 @@ export const routes: Routes = [
   //      component: ProductEditComponent
   //    }]
   //},
-  { path: 'promotions', component: PromotionsComponent },
+  { path: 'admin', component: AdminComponent },
   {
     path: 'faqs',
     pathMatch: 'full',

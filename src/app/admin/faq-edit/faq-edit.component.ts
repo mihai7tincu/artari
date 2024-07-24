@@ -2,18 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../../admin/services/pizza.service';
 import { Pizza } from '../../admin/models/pizza.model';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ParentBoxComponent } from '../parent-box/parent-box.component';
 
 @Component({
-  selector: 'product-edit',
+  selector: 'faq-edit',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, ParentBoxComponent],
-  templateUrl: './product-edit.component.html',
-  styleUrl: './product-edit.component.scss'
+  imports: [CommonModule, ReactiveFormsModule],
+  templateUrl: './faq-edit.component.html',
+  styleUrl: './faq-edit.component.scss'
 })
-export class ProductEditComponent implements OnInit {
+export class FaqEditComponent implements OnInit {
   modelId: number = 0;
   model: Pizza | null = null;
   formGroup: FormGroup = new FormGroup({
@@ -26,7 +25,8 @@ export class ProductEditComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private pizzaService: PizzaService) {
+    private pizzaService: PizzaService,
+    private formBuilder: FormBuilder) {
 
     this.route.params.subscribe(params => {
       this.modelId = params['id'];
@@ -48,13 +48,21 @@ export class ProductEditComponent implements OnInit {
 
   initForm() {
     if (this.model) {
-      this.formGroup = new FormGroup({
-        name: new FormControl(this.model.name, Validators.required),
-        crustSize: new FormControl(this.model.crustSize, [Validators.required, Validators.min(10), Validators.max(40)]),
-        crustType: new FormControl(this.model.crustType, Validators.required),
-        toppings: new FormControl(this.model.toppings)
-      });
+      this.formGroup = this.formBuilder.group({
+          name: [this.model.name, Validators.required],
+          crustSize: [this.model.crustSize, [Validators.required, Validators.min(10), Validators.max(40)]],
+          crustType: [this.model.crustType, Validators.required],
+          toppings: [this.model.toppings]
+        });
     }
+
+    this.formGroup.get("crustSize")?.valueChanges.subscribe(x => {
+      console.log('crustSize changed: ', x);
+    })
+
+    this.formGroup.valueChanges.subscribe(x => {
+      console.log('form values changed: ', x);
+    })
   }
 
   onClickSave(): void {

@@ -1,0 +1,66 @@
+.container {
+  min-height: 755px;
+}
+
+table {
+  width: 100%;
+}
+
+mat-header-cell {
+  font-weight: bold;
+  background-color: #ededed !important;
+}
+
+mat-cell {
+  color: #626262;
+}
+
+.grid-header {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+  justify-content: inherit;
+
+  &-add {
+    display: flex;
+    flex-direction: row;
+
+    &-icon {
+    }
+
+    &-text {
+      padding-left: 10px;
+      font-size: 18px;
+    }
+  }
+}
+
+.row-delete {
+  cursor: pointer;
+}
+
+.id {
+  &-header {
+    max-width: 50px;
+  }
+
+  &-cell {
+    max-width: 50px;
+  }
+}
+
+.actions {
+  &-header {
+    max-width: 80px;
+  }
+
+  &-cell {
+    max-width: 80px;
+  }
+}
+
+.name-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: dodgerblue;
+}
