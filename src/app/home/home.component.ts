@@ -20,6 +20,8 @@ export class HomeComponent implements OnInit {
   products: Product[] = [];
 
   ngOnInit(): void {
-    this.products = this.data.newProducts;
+    this.products = this.data.allProducts
+      .filter((x: Product) => x.isNew === true)
+      .sort((a: Product, b: Product) => a.priority - b.priority);
   }
 }

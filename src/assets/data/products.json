@@ -1,5 +1,5 @@
 {
-  "newProducts": [
+  "allProducts": [
     {
       "id": 1,
       "type": 1,
@@ -11,7 +11,7 @@
       "height": "2m - 3.5m",
       "propagation": "grafting or softwood cuttings",
       "imageUrl": "../../assets/images/butterfly/5.jpg",
-      "priority": 100,
+      "priority": 21,
       "isNew": true
     },
     {
@@ -21,7 +21,7 @@
       "cultivar": "Seiryu",
       "name": "Acer palmatum Seiryu",
       "description": "Frunze disecate. Toamna se coloreaza in galben auriu. Crestere lenta",
-      "price": 25,
+      "price": 20,
       "height": "3m - 4.5m",
       "propagation": "grafting or softwood cuttings",
       "imageUrl": "../../assets/images/seiryu/1.jpg",
@@ -35,11 +35,11 @@
       "cultivar": "Phoenix",
       "name": "Acer palmatum Phoenix",
       "description": "Frunze rosii cu vene verzi-galbui. Toamna se coloreaza in rosu si galben",
-      "price": 30,
+      "price": 25,
       "height": "6m",
       "propagation": "grafting or softwood cuttings",
       "imageUrl": "../../assets/images/phoenix/1.jpg",
-      "priority": 7,
+      "priority": 22,
       "isNew": true
     },
     {
@@ -49,11 +49,11 @@
       "cultivar": "Orange Dream",
       "name": "Acer palmatum Orange Dream",
       "description": "",
-      "price": 30,
+      "price": 25,
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/orangeDream/1.jpg",
-      "priority": 8,
+      "priority": 5,
       "isNew": true
     },
     {
@@ -63,11 +63,11 @@
       "cultivar": "Sango Kaku",
       "name": "Acer palmatum Sango Kaku",
       "description": "",
-      "price": 30,
+      "price": 25,
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/sangoKaku/1.jpg",
-      "priority": 7,
+      "priority": 11,
       "isNew": true
     },
     {
@@ -77,11 +77,11 @@
       "cultivar": "Katsura",
       "name": "Acer palmatum Katsura",
       "description": "",
-      "price": 30,
+      "price": 25,
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/katsura/3.jpg",
-      "priority": 100,
+      "priority": 20,
       "isNew": true
     },
     {
@@ -95,7 +95,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/emmetsPumpkin/4.jpg",
-      "priority": 100,
+      "priority": 14,
       "isNew": true
     },
     {
@@ -109,7 +109,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/autumnMoon/4.jpg",
-      "priority": 100,
+      "priority": 9,
       "isNew": true
     },
     {
@@ -123,7 +123,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/jordan/5.jpg",
-      "priority": 100,
+      "priority": 3,
       "isNew": true
     },
     {
@@ -151,7 +151,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/royalGarnet/2.jpg",
-      "priority": 100,
+      "priority": 16,
       "isNew": true
     },
     {
@@ -165,7 +165,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/jerreSchwartz/4.jpg",
-      "priority": 4,
+      "priority": 12,
       "isNew": true
     },
     {
@@ -175,11 +175,11 @@
       "cultivar": "Moonrise",
       "name": "Acer shirasawanum Moonrise",
       "description": "",
-      "price": 30,
+      "price": 35,
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/moonrise/1.jpg",
-      "priority": 2,
+      "priority": 10,
       "isNew": true
     },
     {
@@ -193,7 +193,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/aconitifolium/2.jpg",
-      "priority": 100,
+      "priority": 17,
       "isNew": true
     },
     {
@@ -203,11 +203,11 @@
       "cultivar": "Crimson Queen",
       "name": "Acer palmatum Dissectum Crimson Queen",
       "description": "",
-      "price": 25,
+      "price": 35,
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/crimsonQueen/3.jpg",
-      "priority": 3,
+      "priority": 15,
       "isNew": true
     },
     {
@@ -221,7 +221,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/viridis/1.jpg",
-      "priority": 5,
+      "priority": 6,
       "isNew": true
     },
     {
@@ -263,7 +263,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/bloodgood/1.jpg",
-      "priority": 100,
+      "priority": 7,
       "isNew": true
     },
     {
@@ -273,11 +273,11 @@
       "cultivar": "Mikawa Yatsubusa",
       "name": "Acer palmatum Mikawa Yatsubusa",
       "description": "",
-      "price": 25,
+      "price": 40,
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/mikawa/1.jpg",
-      "priority": 100,
+      "priority": 8,
       "isNew": true
     },
     {
@@ -290,8 +290,8 @@
       "price": 25,
       "height": "",
       "propagation": "",
-      "imageUrl": "../../assets/images/rubystars/1.jpg",
-      "priority": 100,
+      "imageUrl": "../../assets/images/rubyStars/1.jpg",
+      "priority": 18,
       "isNew": true
     },
     {
@@ -301,11 +301,11 @@
       "cultivar": "Red Emperor",
       "name": "Acer palmatum Red Emperor",
       "description": "",
-      "price": 25,
+      "price": 35,
       "height": "",
       "propagation": "",
-      "imageUrl": "../../assets/images/redemperor/1.jpg",
-      "priority": 100,
+      "imageUrl": "../../assets/images/redEmperor/1.jpg",
+      "priority": 2,
       "isNew": true
     },
     {
@@ -319,7 +319,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/osakazuki/1.jpg",
-      "priority": 100,
+      "priority": 19,
       "isNew": true
     },
     {
@@ -329,11 +329,11 @@
       "cultivar": "Pixie",
       "name": "Acer palmatum Pixie",
       "description": "",
-      "price": 25,
+      "price": 30,
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/pixie/1.jpg",
-      "priority": 100,
+      "priority": 4,
       "isNew": true
     },
     {
@@ -343,15 +343,12 @@
       "cultivar": "Vitifolium",
       "name": "Acer japonicum Vitifolium",
       "description": "",
-      "price": 25,
+      "price": 30,
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/vitifolium/1.jpg",
-      "priority": 100,
+      "priority": 22,
       "isNew": true
     }
-  ],
-  "allProducts": [
-    
   ]
 }

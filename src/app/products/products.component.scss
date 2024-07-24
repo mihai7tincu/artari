@@ -1,3 +1,11 @@
 .container {
   min-height: 755px;
 }
+
+.new {
+  &-products {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+}
