@@ -7,6 +7,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ShoppingCartComponent } from './shoppingc-cart/shopping-cart.component';
 import { ProductEditComponent } from './products/product-edit/product-edit.component';
 import { FaqEditComponent } from './admin/faq-edit/faq-edit.component';
+import { ProductViewComponent } from './products/product-view/product-view.component';
 
 export const routes: Routes = [
   {
@@ -29,20 +30,15 @@ export const routes: Routes = [
     pathMatch: 'full',
     component: ProductEditComponent
   },
-  //{
-  //  path: 'products', component: ProductsComponent,
-  //  pathMatch: 'full',
-  //  children: [
-  //    {
-  //      path: 'edit/list',
-  //      component: ProductsComponent
-  //    },
-  //    {
-  //      path: 'edit/:id',
-  //      component: ProductEditComponent
-  //    }]
-  //},
-  { path: 'admin', component: AdminComponent },
+  {
+    path: 'products/view/:id',
+    pathMatch: 'full',
+    component: ProductViewComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
+  },
   {
     path: 'faqs',
     pathMatch: 'full',
@@ -53,6 +49,12 @@ export const routes: Routes = [
     pathMatch: 'full',
     component: FaqEditComponent
   },
-  { path: 'contact', component: ContactComponent },
-  { path: 'shopping-cart', component: ShoppingCartComponent }
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: 'shopping-cart',
+    component: ShoppingCartComponent
+  }
 ];

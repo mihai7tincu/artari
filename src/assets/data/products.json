@@ -25,7 +25,7 @@
       "height": "3m - 4.5m",
       "propagation": "grafting or softwood cuttings",
       "imageUrl": "../../assets/images/seiryu/1.jpg",
-      "priority": 100,
+      "priority": 25,
       "isNew": true
     },
     {
@@ -235,7 +235,7 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/rosu/1.jpg",
-      "priority": 100,
+      "priority": 99,
       "isNew": false
     },
     {
@@ -347,7 +347,21 @@
       "height": "",
       "propagation": "",
       "imageUrl": "../../assets/images/vitifolium/1.jpg",
-      "priority": 22,
+      "priority": 24,
+      "isNew": true
+    },
+    {
+      "id": 26,
+      "type": 1,
+      "species": 2,
+      "cultivar": "Emerald Lace",
+      "name": "Acer palmatum Dissectum Emerald Lace",
+      "description": "",
+      "price": 30,
+      "height": "",
+      "propagation": "",
+      "imageUrl": "../../assets/images/emeraldLace/1.jpg",
+      "priority": 23,
       "isNew": true
     }
   ]
