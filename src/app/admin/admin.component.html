@@ -15,26 +15,31 @@
       <mat-cell *matCellDef="let element" class="id-cell"> {{element.id}} </mat-cell>
     </ng-container>
 
-    <ng-container matColumnDef="name">
-      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+    <ng-container matColumnDef="typeName">
+      <mat-header-cell *matHeaderCellDef> Type </mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.typeName}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="speciesName">
+      <mat-header-cell *matHeaderCellDef> Species </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.speciesName}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="cultivar">
+      <mat-header-cell *matHeaderCellDef> Cultivar </mat-header-cell>
       <mat-cell *matCellDef="let element">
-        <span class="name-link" (click)="onClickEdit(element.id)">{{element.name}}</span>
+        <span class="name-link" (click)="onClickEdit(element.id)">{{element.cultivar}}</span>
       </mat-cell>
     </ng-container>
 
-    <ng-container matColumnDef="crustSize">
-      <mat-header-cell *matHeaderCellDef> Crust Size </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.crustSize}} </mat-cell>
+    <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.price}} </mat-cell>
     </ng-container>
 
-    <ng-container matColumnDef="crustType">
-      <mat-header-cell *matHeaderCellDef> Crust Type </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.crustType}} </mat-cell>
-    </ng-container>
-
-    <ng-container matColumnDef="toppings">
-      <mat-header-cell *matHeaderCellDef> Toppings </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.toppings}} </mat-cell>
+    <ng-container matColumnDef="priority">
+      <mat-header-cell *matHeaderCellDef> Priority </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.priority}} </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="actions">
@@ -51,4 +56,5 @@
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
+  <br />
 </div>

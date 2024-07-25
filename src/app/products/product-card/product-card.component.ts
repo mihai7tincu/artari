@@ -1,8 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Product } from '../../models/product.model';
 import { CommonModule } from '@angular/common';
-import { ProductSpecies, ProductSpeciesNames, ProductSpeciesShortNames, ProductType, ProductTypeNames, ProductTypeShortNames } from '../../models/product-type.enum';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProductSpeciesNames, ProductSpeciesShortNames, ProductTypeNames, ProductTypeShortNames } from '../../models/product-type.enum';
+import { Product } from '../../models/product.model';
 
 @Component({
   selector: 'app-product-card',

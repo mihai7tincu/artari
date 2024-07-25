@@ -8,11 +8,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
+import { Router } from '@angular/router';
+import { ProductSpeciesNames, ProductTypeNames } from '../models/product-type.enum';
+import { Product } from '../models/product.model';
+import { CartProductsCountService } from '../shoppingc-cart/services/cart-products-count.service';
 import { AddPizzaDialog } from './add-dialog/add-dialog.component';
 import { Pizza } from './models/pizza.model';
 import { PizzaService } from './services/pizza.service';
-import { ActivatedRoute, Router } from '@angular/router';
-import { CartProductsCountService } from '../shoppingc-cart/services/cart-products-count.service';
+import { ProductService } from './services/product.service';
 
 @Component({
   selector: 'app-admin',
@@ -22,32 +25,28 @@ import { CartProductsCountService } from '../shoppingc-cart/services/cart-produc
   styleUrl: './admin.component.scss'
 })
 export class AdminComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name', 'crustSize', 'crustType', 'toppings', 'actions'];
-  dataSource: Pizza[] = [];
+  displayedColumns: string[] = ['id', 'typeName', 'speciesName', 'cultivar', 'price', 'priority', 'actions'];
+  dataSource: Product[] = [];
 
   constructor(
     private router: Router,
     public dialog: MatDialog,
     private pizzaService: PizzaService,
+    private productService: ProductService,
     private cartProductsCountService: CartProductsCountService) {
 
     this.fetchDataSource();
   }
 
-  ngOnInit(): void {
-    this.dataSource.push(
-      <Pizza>{
-        id: 1,
-        name: 'Diavola',
-        crustSize: 32,
-        crustType: 1,
-        toppings: [1, 2]
-      });
-  }
+  ngOnInit(): void { }
 
   fetchDataSource() {
-    this.pizzaService.getAll().subscribe(response => {
-      this.dataSource = response;
+    this.productService.getAll().subscribe(response => {
+      this.dataSource = response.map((item: Product) => (<Product>{
+        ...item,
+        speciesName: ProductSpeciesNames[item.species],
+        typeName: ProductTypeNames[item.type],
+      }));     
     });
   }
 

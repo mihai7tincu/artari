@@ -13,4 +13,8 @@ export interface Product {
   imageUrl: string;
   priority: number;
   isNew: boolean;
+  isSoldout: boolean;
+
+  typeName: string;
+  speciesName: string;
 }
