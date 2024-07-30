@@ -33,4 +33,22 @@
     margin-left: auto;
     padding-right: 3px;
   }
+
+  &-isNew {
+    width: 38px;
+    background-color: #fb8800c2;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 3px;
+    margin-left: auto;
+    margin-right: 10px;
+
+    &-row {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }

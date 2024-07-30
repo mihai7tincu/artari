@@ -13,6 +13,7 @@ import { Product } from '../../models/product.model';
 })
 export class ProductCardComponent {
   @Input() product: Product = <Product>{};
+  @Input() new: string | undefined;
 
   constructor(private router: Router) { }
 
