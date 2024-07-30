@@ -3,7 +3,10 @@
     <img [src]="product.imageUrl" alt="{{product.cultivar}}-alt" height="358" width="250" class="card-image-img">
   </div>
   <div class="card-isNew-row">
-    <span class="card-isNew" *ngIf="new && product.isNew">Nou</span>
+    <span class="card-isNew" *ngIf="(new || soldout) && (product.isSoldout || product.isNew)">
+      {{ (soldout && product.isSoldout) ? 'Epuizat'
+        : new ? 'Nou' : '' }}
+    </span>
   </div>
   <div class="card-info">
     <div>

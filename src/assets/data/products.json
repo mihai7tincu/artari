@@ -12,7 +12,8 @@
       "propagation": "grafting or softwood cuttings",
       "imageUrl": "../../assets/images/butterfly/5.jpg",
       "priority": 21,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 2,
@@ -26,7 +27,8 @@
       "propagation": "grafting or softwood cuttings",
       "imageUrl": "../../assets/images/seiryu/1.jpg",
       "priority": 25,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 3,
@@ -40,7 +42,8 @@
       "propagation": "grafting or softwood cuttings",
       "imageUrl": "../../assets/images/phoenix/1.jpg",
       "priority": 22,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 4,
@@ -54,7 +57,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/orangeDream/1.jpg",
       "priority": 5,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 5,
@@ -68,7 +72,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/sangoKaku/1.jpg",
       "priority": 11,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 6,
@@ -82,7 +87,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/katsura/3.jpg",
       "priority": 20,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 7,
@@ -96,7 +102,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/emmetsPumpkin/4.jpg",
       "priority": 14,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 8,
@@ -110,7 +117,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/autumnMoon/4.jpg",
       "priority": 9,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 9,
@@ -124,7 +132,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/jordan/5.jpg",
       "priority": 3,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 10,
@@ -138,7 +147,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/atropurpureum/2.jpg",
       "priority": 1,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 11,
@@ -152,7 +162,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/royalGarnet/2.jpg",
       "priority": 16,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 12,
@@ -166,7 +177,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/jerreSchwartz/4.jpg",
       "priority": 12,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 13,
@@ -180,7 +192,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/moonrise/1.jpg",
       "priority": 10,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 14,
@@ -194,7 +207,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/aconitifolium/2.jpg",
       "priority": 17,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 15,
@@ -208,7 +222,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/crimsonQueen/3.jpg",
       "priority": 15,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 16,
@@ -222,7 +237,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/viridis/1.jpg",
       "priority": 6,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 17,
@@ -236,7 +252,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/rosu/1.jpg",
       "priority": 99,
-      "isNew": false
+      "isNew": false,
+      "isSoldout": false
     },
     {
       "id": 18,
@@ -250,7 +267,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/verde/1.jpg",
       "priority": 100,
-      "isNew": false
+      "isNew": false,
+      "isSoldout": false
     },
     {
       "id": 19,
@@ -264,7 +282,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/bloodgood/1.jpg",
       "priority": 7,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 20,
@@ -278,7 +297,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/mikawa/1.jpg",
       "priority": 8,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 21,
@@ -292,7 +312,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/rubyStars/1.jpg",
       "priority": 18,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 22,
@@ -306,7 +327,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/redEmperor/1.jpg",
       "priority": 2,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": true
     },
     {
       "id": 23,
@@ -320,7 +342,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/osakazuki/1.jpg",
       "priority": 19,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 24,
@@ -334,7 +357,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/pixie/1.jpg",
       "priority": 4,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 25,
@@ -348,7 +372,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/vitifolium/1.jpg",
       "priority": 24,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     },
     {
       "id": 26,
@@ -362,7 +387,8 @@
       "propagation": "",
       "imageUrl": "../../assets/images/emeraldLace/1.jpg",
       "priority": 23,
-      "isNew": true
+      "isNew": true,
+      "isSoldout": false
     }
   ]
 }
