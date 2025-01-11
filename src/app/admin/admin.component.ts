@@ -46,7 +46,7 @@ export class AdminComponent implements OnInit {
         ...item,
         speciesName: ProductSpeciesNames[item.species],
         typeName: ProductTypeNames[item.type],
-      }));     
+      })).sort((a: Product, b: Product) => a.species - b.species);
     });
   }
 
